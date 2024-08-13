@@ -1,0 +1,39 @@
+name: Publish Package to npm
+
+on:
+  push:
+    branches:
+      - main  # Publier à chaque push sur la branche principale
+  release:
+    types: [created]  # Publier à chaque nouvelle release
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          registry-url: 'https://registry.npmjs.org/'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build # Assurez-vous que votre script de build est défini dans package.json
+
+      - name: Publish to npm
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create GitHub release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: dist/** # Ajoutez les fichiers à inclure dans la release GitHub

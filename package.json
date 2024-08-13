@@ -1,0 +1,21 @@
+{
+  "name": "postal-code-cities",
+  "author": {
+    "name": "Arnaud POINTET",
+    "email": "contact@forelse.info",
+  },
+  "license": "MIT",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --p ./tsconfig-build.json && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0"
+  }
+}
