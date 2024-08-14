@@ -1,12 +1,12 @@
 {
-  "name": "postal-code-cities",
+  "name": "geo-codepostal",
   "author": {
     "name": "Arnaud POINTET",
     "email": "contact@forelse.info"
   },
   "license": "MIT",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -24,5 +24,8 @@
     "dist/**/*",
     "README.md",
     "LICENSE"
-  ]
+  ],
+  "dependencies": {
+    "ofetch": "^1.3.4"
+  }
 }
