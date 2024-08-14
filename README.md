@@ -1,14 +1,14 @@
 
-# Postal Code Cities
+# Geo Code Postal
 
-`Postal Code Cities` est une bibliothèque JavaScript/TypeScript simple et flexible pour récupérer une liste de villes en fonction d'un code postal. La bibliothèque est conçue pour être modulaire et permet d'intégrer facilement différentes API grâce à des fonctions de transformation configurables.
+`geo-codepostal` est une bibliothèque JavaScript/TypeScript simple et flexible pour récupérer une liste de villes en fonction d'un code postal. La bibliothèque est conçue pour être modulaire et permet d'intégrer facilement différentes API grâce à des fonctions de transformation configurables.
 
 ## Installation
 
 Vous pouvez installer cette bibliothèque via npm :
 
 ```bash
-npm install postal-code-cities
+npm install geo-codepostal
 ```
 
 ## Utilisation
@@ -18,7 +18,7 @@ npm install postal-code-cities
 Voici comment importer et utiliser les fonctions de la bibliothèque dans un projet TypeScript :
 
 ```typescript
-import { isValidPostalCode, useFetchCities, populateCitySelect } from 'postal-code-cities';
+import { isValidPostalCode, useFetchCities, populateCitySelect } from 'geo-codepostal';
 ```
 
 ### 2. Validation du code postal
@@ -78,7 +78,7 @@ Dans cet exemple, `'cities-select'` est l'ID de l'élément `select` dans le DOM
 Voici un exemple complet combinant toutes les fonctionnalités ci-dessus :
 
 ```typescript
-import { isValidPostalCode, useFetchCities, populateCitySelect } from 'postal-code-cities';
+import { isValidPostalCode, useFetchCities, populateCitySelect } from 'geo-codepostal';
 
 const postalCodeInput = document.getElementById('postal-code') as HTMLInputElement;
 
