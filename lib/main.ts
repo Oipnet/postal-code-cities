@@ -1,5 +1,5 @@
-import { isValidPostalCode } from './validation/isValidPostalCode.ts';
-import { useFetchCities } from './composables/useFetchCities.ts';
-import { populateCitySelect } from './dom/populateCitySelect.ts';
+import { isValidPostalCode } from './validation/isValidPostalCode';
+import { useFetchCities } from './composables/useFetchCities';
+import { populateCitySelect } from './dom/populateCitySelect';
 
 export { isValidPostalCode, useFetchCities, populateCitySelect };
