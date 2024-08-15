@@ -1,4 +1,4 @@
-import { populateCitySelect } from './populateCitySelect';
+import { populateCitySelect } from './dom.presenter';
 import { City } from '../interfaces/City';
 import '@testing-library/jest-dom';
 

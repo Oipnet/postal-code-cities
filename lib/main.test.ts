@@ -1,7 +1,7 @@
 import * as Module from './main';
 import { isValidPostalCode } from './validation/isValidPostalCode';
 import { useFetchCities } from './composables/useFetchCities';
-import { populateCitySelect } from './dom/populateCitySelect';
+import { populateCitySelect } from './presenter/dom.presenter';
 
 // Mock de `ofetch`
 jest.mock('ofetch', () => {
